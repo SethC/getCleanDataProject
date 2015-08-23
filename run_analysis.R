@@ -49,6 +49,7 @@ stdCols<-grep("std()", features[,2])
 export<-X[,c(meanCols, stdCols)]
 export<-cbind(X[,563:564], export)
 
+install.packages("reshape2", "plyr")
 library(reshape2)
 library(plyr)
 
